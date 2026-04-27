@@ -7,9 +7,7 @@ Bootstrap script for setting up a fresh machine with my [dotfiles](https://githu
 On a fresh macOS, Linux, or WSL machine:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/sashton/dotfiles-bootstrap/main/install.sh -o /tmp/bootstrap.sh
-bash /tmp/bootstrap.sh
-rm /tmp/bootstrap.sh
+curl -fsSL https://raw.githubusercontent.com/sashton/dotfiles-bootstrap/main/install.sh -o /tmp/bootstrap.sh && bash /tmp/bootstrap.sh && rm /tmp/bootstrap.sh
 ```
 
 Download-then-run (rather than `curl | bash`) gives the script an interactive TTY, which Homebrew's installer needs for sudo prompts and `gh auth login` needs for browser-based authentication.
